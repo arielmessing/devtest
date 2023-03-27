@@ -182,7 +182,7 @@
 
             $scope.currentNote = {
                 id: null,
-                timstamp: null,
+                timestamp: null,
                 name: null,
                 text: null
             };
