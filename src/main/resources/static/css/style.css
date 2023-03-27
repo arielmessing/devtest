@@ -1,0 +1,68 @@
+/*Structure*/
+
+html {
+  height: 100%;
+}
+
+body {
+    margin : 0;
+    min-height: 100%
+    background-color : #f7f7f7;
+}
+
+.header {
+    background-color : black;
+    height: 50px;
+    color: white;
+}
+
+.notes-view {
+    min-height: 500px;
+    position: relative;
+    display: flex;
+}
+
+.notes-view .notes-panel {
+    width: 30%;
+    border-right: 1px solid;
+    padding: 40px;
+}
+.notes-view .note-panel {
+    width: 70%;
+    padding: 40px;
+}
+
+
+/* Note panels */
+.notes-view .note-panel md-input-container {
+    display: block;
+}
+.notes-view .note-panel md-input-container .note-body {
+    height:300px;
+}
+
+
+
+/* Notes list panels */
+.notes-view .notes-panel ul.notes-list {
+    list-style: none;
+    padding: 0;
+    max-height: 400px;
+    overflow: scroll;
+}
+.notes-view .notes-panel .notes-list li {
+    list-style: none;
+    padding: 8px 0;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+.notes-view .notes-panel .notes-list li:hover {
+    background-color: lightgray;
+}
+.notes-view .notes-panel .notes-list .note-timedate {
+    font-size: 10px;
+}
+
+
+
+

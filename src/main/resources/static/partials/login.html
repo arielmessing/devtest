@@ -1,0 +1,26 @@
+<h1>Login</h1>
+
+<form>
+    <section>
+        <md-input-container>
+            <label>Username</label>
+            <input type="text" ng-model="credentials.username" required>
+        </md-input-container>
+    </section>
+
+    <section>
+        <md-input-container>
+            <label>Password</label>
+            <input type="password" ng-model="credentials.password" required>
+        </md-input-container>
+    </section>
+
+    <!-- TODO: Clear error if changing -->
+    <p style="color:red" ng-show="invalidCreds">Invalid credentials</p>
+
+    <div class="action-buttons">
+        <md-button ng-disabled="! isValid()" ng-click="login()">
+            Login
+        </md-button>
+    </div>
+</form>

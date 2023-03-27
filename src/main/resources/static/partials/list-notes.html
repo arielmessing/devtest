@@ -1,0 +1,11 @@
+<h4>Available notes</h4>
+
+<ul class="notes-list">
+    <li ng-repeat="listedNote in notes" ng-click="viewNote(listedNote.id)">
+        <p class="note-summary">{{listedNote.name}}</p>
+        <p class="note-timedate"><i>{{listedNote.timestamp}}</i></p>
+    </li>
+</ul>
+<md-button style="float:right" ng-click="newNoteView()">
+    New Note
+</md-button>

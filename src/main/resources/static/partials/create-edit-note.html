@@ -1,0 +1,23 @@
+<h4>Note</h4>
+
+<form>
+    <md-input-container>
+        <label>Name</label>
+        <input type="text" ng-model="currentNote.name" required md-maxlength="restrictions.MAX_NAME">
+    </md-input-container>
+
+    <md-input-container>
+        <label>Note text</label>
+        <textarea class="note-body" ng-model="currentNote.text" rows="10" required md-maxlength="500">
+                </textarea>
+    </md-input-container>
+
+    <div class="action-buttons">
+        <md-button ng-disabled="! isCurrentNoteValid()" ng-click="save()">
+            Save
+        </md-button>
+        <md-button ng-click="cancel()">
+            Cancel
+        </md-button>
+    </div>
+</form>
